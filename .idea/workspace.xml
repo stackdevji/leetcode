@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c63aceb2-cf25-47cf-9fd9-9c237311d8b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/tree/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/tree/leetcode/editor/cn/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/tree/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618406565730</updated>
       <workItem from="1618406568079" duration="6065000" />
-      <workItem from="1618414951652" duration="3281000" />
+      <workItem from="1618414951652" duration="3971000" />
     </task>
     <servers />
   </component>
