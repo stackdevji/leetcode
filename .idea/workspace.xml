@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c63aceb2-cf25-47cf-9fd9-9c237311d8b6" name="Default Changelist" comment="" />
+    <list default="true" id="c63aceb2-cf25-47cf-9fd9-9c237311d8b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/leetcode/editor/cn/[124]二叉树中的最大路径和.go" beforeDir="false" afterPath="$PROJECT_DIR$/tree/leetcode/editor/cn/[124]二叉树中的最大路径和.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tree/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/tree/leetcode/editor/cn/all.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go" />
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="GOROOT" path="$PROJECT_DIR$/../../Cellar/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -18,13 +33,41 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c63aceb2-cf25-47cf-9fd9-9c237311d8b6" name="Default Changelist" comment="" />
+      <created>1618406565730</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618406565730</updated>
+      <workItem from="1618406568079" duration="6065000" />
+      <workItem from="1618414951652" duration="2981000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="281" y="161" key="SettingsEditor" timestamp="1618406657188">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="281" y="161" key="SettingsEditor/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1618406657188" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1618419187073">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1618419187073" />
   </component>
 </project>

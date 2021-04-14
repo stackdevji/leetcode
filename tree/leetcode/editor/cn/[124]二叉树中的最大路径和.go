@@ -33,6 +33,12 @@
 // Related Topics 树 深度优先搜索 递归 
 // 👍 1013 👎 0
 
+// 分治法
+// 1. 左子树最大路径和最大
+// 2. 右子树最大路径和最大
+// 3. 1和2+根节点路径最大
+
+// 提供两个变量，一个存储子树最大路径和，一个保存左右加根节点和，然后比较大小
 
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
@@ -43,7 +49,47 @@
  *     Right *TreeNode
  * }
  */
-func maxPathSum(root *TreeNode) int {
 
+ type ResultMaxSum struct {
+    SideMaxSum int // 单边-子树最大路径和+自己
+    MaxSum int // （左最大路径和 + 右最大路径和 + 根节点值）和 左右最大值做比较，因为有的节点是负数
+ }
+
+ func max (a, b int) int {
+    if a > b {
+        return a
+    } else {
+        return b
+    }
+ }
+
+ func GetMaxSum(root *TreeNode) ResultMaxSum {
+    if root == nil {
+        // tips: MaxSum 等于int类型最小的负数，防止节点有负数值
+        return ResultMaxSum{SideMaxSum:0, MaxSum:-(1 << 31)}
+    }
+
+    // 分治计算左右子树的单边最大路径和
+    leftResult := GetMaxSum(root.Left)
+    rightResult := GetMaxSum(root.Right)
+
+    result := ResultMaxSum{}
+
+    // 计算当前节点的最大单边最大值
+    if leftResult.SideMaxSum > rightResult.SideMaxSum {
+        result.SideMaxSum = max(leftResult.SideMaxSum + root.Val, 0)
+    } else {
+        result.SideMaxSum = max(rightResult.SideMaxSum + root.Val, 0)
+    }
+
+    // 两边加根最大和
+    maxSum := max(leftResult.MaxSum, rightResult.MaxSum)
+    result.MaxSum = max(maxSum, leftResult.SideMaxSum + rightResult.SideMaxSum + root.Val)
+    return result
+ }
+
+func maxPathSum(root *TreeNode) int {
+    result := GetMaxSum(root)
+    return result.MaxSum
 }
 //leetcode submit region end(Prohibit modification and deletion)
