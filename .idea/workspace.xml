@@ -10,8 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c63aceb2-cf25-47cf-9fd9-9c237311d8b6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/leetcode/editor/cn/[124]二叉树中的最大路径和.go" beforeDir="false" afterPath="$PROJECT_DIR$/tree/leetcode/editor/cn/[124]二叉树中的最大路径和.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tree/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/tree/leetcode/editor/cn/all.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618406565730</updated>
       <workItem from="1618406568079" duration="6065000" />
-      <workItem from="1618414951652" duration="2981000" />
+      <workItem from="1618414951652" duration="3281000" />
     </task>
     <servers />
   </component>
