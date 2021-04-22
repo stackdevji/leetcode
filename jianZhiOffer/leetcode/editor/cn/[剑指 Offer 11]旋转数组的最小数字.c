@@ -43,7 +43,7 @@ int minArray(int* numbers, int numbersSize){
     int start = 0;
     int mid = start;
     int end = numbersSize - 1;
-    while (numbers[start] >= numbers[end]) {
+    while (numbers[start] >= numbers[end]) {2
         // 2. 正常情况，有序旋转数组的最小值分割前后子数组, 所以end对应元素是最小值
         if (end - start == 1) {
             mid =  end;
