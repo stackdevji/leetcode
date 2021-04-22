@@ -24,9 +24,41 @@
 // Related Topics 数学 动态规划 
 // 👍 217 👎 0
 
+package leetcode
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func cuttingRope(n int) int {
+	if n <= 1 {
+		return 0
+	}
+	if n == 2 {
+		return 1
+	}
+	if n == 3 {
+		return 2
+	}
 
+	// 定义 0 <= i <= n对应的乘积数组
+	maxArr := make([]int, n + 1)
+
+	// 初始化0-3的最大乘积，因为n<=3的最大乘积都小于本身，会影响 n >= 4 乘积的计算，所以最大乘积等于本身
+	maxArr[0] = 0
+	maxArr[1] = 1
+	maxArr[2] = 2
+	maxArr[3] = 3
+
+	max := 0
+	for i := 4; i <= n; i++ {
+		// 过滤重复序列 比如 n = 4 可以切割的序列为 （1, 3） (2, 2) (3, 1) 所以只比对一半就行
+		for j := 1; j <= i / 2; j++ {
+			product := maxArr[j] * maxArr[i - j]
+			if max < product {
+				max = product
+			}
+		}
+		maxArr[i] = max
+	}
+
+	return maxArr[n]
 }
 //leetcode submit region end(Prohibit modification and deletion)
