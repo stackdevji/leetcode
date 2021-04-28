@@ -40,7 +40,7 @@
 // 注意：本题与主站 79 题相同：https://leetcode-cn.com/problems/word-search/ 
 // Related Topics 深度优先搜索 
 // 👍 304 👎 0
-package leetcode
+package cn
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func isHasPath(board [][]byte, rows, cols, row, col, strLen int, matchIndex *int, isVisit [][]int, word string) bool {

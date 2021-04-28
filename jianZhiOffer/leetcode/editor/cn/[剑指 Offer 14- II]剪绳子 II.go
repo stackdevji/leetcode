@@ -30,9 +30,40 @@
 // Related Topics 数学 动态规划 
 // 👍 102 👎 0
 
+// 该题是让用贪婪算法实现
 
 //leetcode submit region begin(Prohibit modification and deletion)
-func cuttingRope(n int) int {
+func pow(x, n int) int {
+	sum := 1
+	for n > 0 {
+		if (n & 1) == 1 {
+			sum = sum * x % 1000000007
+		}
+		x = x * x % 1000000007
+		n >>= 1
+	}
+	return sum
+}
 
+func cuttingRope(n int) int {
+	if n <= 1 {
+		return 0
+	}
+	if n == 2 {
+		return 1
+	}
+	if n == 3 {
+		return 2
+	}
+
+	cnt_3 := n / 3
+	mod := n % 3
+	cnt_2 := mod / 2
+	if mod == 1 {
+		cnt_3 = cnt_3 - 1
+		cnt_2 = 2
+	}
+
+	return pow(3, cnt_3) * pow(2, cnt_2) % 1000000007
 }
 //leetcode submit region end(Prohibit modification and deletion)

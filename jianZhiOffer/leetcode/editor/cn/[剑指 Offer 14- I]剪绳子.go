@@ -24,7 +24,7 @@
 // Related Topics 数学 动态规划 
 // 👍 217 👎 0
 
-package leetcode
+package cn
 
 //leetcode submit region begin(Prohibit modification and deletion)
 func cuttingRope(n int) int {
